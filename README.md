@@ -7,6 +7,7 @@
 ![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/Suicides-Analysis-India)
 ![Github Repo License](https://img.shields.io/github/license/Onnamission/Suicides-Analysis-India)
 ![Github Repo Maintenance](https://img.shields.io/maintenance/yes/2022)
+![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/Suicides-Analysis-India/total)
 
 Analysis of suicides in India from year 2001 to 2012.
 
