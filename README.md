@@ -4,10 +4,11 @@
 
 ![Github Repo Release](https://img.shields.io/github/release-date/Onnamission/Suicides-Analysis-India)
 ![Github Repo Build](https://img.shields.io/github/workflow/status/Onnamission/Suicides-Analysis-India/suicides)
+![Github Repo Checks](https://badgen.net/github/checks/Onnamission/Suicides-Analysis-India/main)
 ![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/Suicides-Analysis-India)
 ![Github Repo License](https://img.shields.io/github/license/Onnamission/Suicides-Analysis-India)
-![Github Repo Maintenance](https://img.shields.io/maintenance/yes/2022)
 ![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/Suicides-Analysis-India/total)
+![Github Repo Star Req](https://img.shields.io/badge/%F0%9F%8C%9F-If%20Useful-BC4E99)
 
 Analysis of suicides in India from year 2001 to 2012.
 
@@ -35,7 +36,7 @@ A more robust approach needs to be applied. Now here comes the role on R where y
 
 ## Data Pipeline in R
 
-```bash
+```r
   data_clean = df %>%
     na_if("Total (States)") %>%
     na_if("Total (All India)") %>%
@@ -78,14 +79,14 @@ The dataset is about the suicides incidents happed from year 2001 to 2012. Follo
 There was some unlogical data filled which does not made sense. Not ever 0.1%. So, those values were removed through above pipeline.
 Further, some redundant data existed, so changed those values.
 
-```bash
+```r
   data_clean$State[data_clean$State == "Delhi (Ut)"] = "Delhi"
   data_clean$Type[data_clean$Type == "Divorcee"] = "Divorce"
 ```
 
 Second time the data cleaning was performed in order to remove special symbols if existed.
 
-```bash
+```r
   dataclean = data_clean %>%
     janitor::clean_names()
 ```
